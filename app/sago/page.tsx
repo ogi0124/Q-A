@@ -36,7 +36,7 @@ export default function Index() {
     const [inputValue, setInputValue] = React.useState('');
 
     const showInput = function(){
-        const inputElement = document.getElementById("userInput")
+        const inputElement : string | number = document.getElementById("userInput")
         const inputValue = inputElement.value
         setInputValue(inputValue)
     }
