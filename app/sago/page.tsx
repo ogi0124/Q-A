@@ -36,11 +36,11 @@ export default function Index() {
     const [inputValue, setInputValue] = React.useState('');
 
     const showInput = function(){
-        const inputElement : any = document.getElementById("userInput")
+        const inputElement = document.getElementById("userInput")
         const inputValue = inputElement.value
         setInputValue(inputValue)
     }
-    async function postData(url, data) {
+    /*async function postData(url, data) {
         // 옵션 기본 값은 *로 강조
         const response = await fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE 등
@@ -55,7 +55,7 @@ export default function Index() {
   
   postData('https://example.com/answer', { inputValue }).then((data) => {
     console.log(data); // JSON 데이터가 `data.json()` 호출에 의해 파싱됨
-  });
+  });*/
   
   return (
   <div>
